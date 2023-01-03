@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: "manrope";
+    src: url(/fonts/manrope.ttf);
+}
+@font-face {
+    font-family: "rowdies-light";
+    src: url(/fonts/Rowdies-Light.woff);
+}
+@font-face {
+    font-family: "rowdies-regular";
+    src: url(/fonts/rowdies-regular.ttf);
+}
+
+
+
+// generic 
+
+$border-color-light:#ebe9e9;
+$border-color-dark:#3F3F46;
+
+$screen-sm:640px;
+$screen-md:768px;
+$screen-lg:1024px;
+$screen-xl:1280px;
+$screen-2xl:1536px;
+
+$color-white: #ffffff; // footer bladeB , bladeA input 
+$color-light: #F3F2E7;
+$color-gray:  #565b63;
+$color-dark: rgb(41,41,41);
+
+
+
+//  app specific 
+
+
+
+
+$font-primary:"rowdies-regular",sans-serif;
+$font-secondary:"manrope",sans-serif;
+
+$color-cocoa: #3A1700;
+$color-skin: #E29F72;
+$color-aqua: #2FB0AB;
+$color-cream: #F3F2E7;
+$bg-footer:#7A4827 // footer 
+
+
+
+
+

@@ -1,0 +1,84 @@
+.fs-title {
+    font-size:  calc(2.5rem + 2vw ) ;
+}
+
+.fs-xx-large {
+    font-size: calc( 2.5rem + 1vw )
+}
+
+.fs-x-large {
+    font-size: calc( 2rem + 1vw )
+}
+
+.fs-larger {
+    font-size: calc( 1.2rem + 0.5vw )
+}
+
+.fs-large {
+    font-size: calc( 1rem + 0.2vw )
+}
+
+.fs-normal {
+    font-size: 1rem  !important;
+}
+
+.fs-small {
+    font-size: 0.85rem ;
+}
+
+.fs-smaller {
+    font-size: 0.7rem  ;
+}
+
+// font weights 
+
+.fw-light {
+    font-weight: lighter !important;
+}
+
+.fw-regular {
+    font-weight: regular   !important;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+// line-heights 
+
+.lh-small {
+    line-height: 0.75;
+}
+.lh-normal {
+    line-height: 1;
+}
+.lh-large  {
+    line-height: 1.25;
+}
+.lh-larger  {
+    line-height: 1.5;
+}
+.lh-double  {
+    line-height: 2;
+}
+
+//spacings  and transforms 
+
+.loose-text {
+    letter-spacing: 1.5px;
+}
+
+.spaced-text {
+    word-spacing: 7px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}

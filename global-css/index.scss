@@ -1,0 +1,357 @@
+/*  
+    index: contains codes globals for each page 
+ 
+    TOC :                      Content                                   Location / Line Number 
+    
+    fonts :                     imported in variables.scss                  36 
+    borders :                   borders , dark and                          50
+                                light colors                                
+            
+    border-radius :             border radius , pill and circle             85
+    utils :                     icon buttons , dividers                     116
+                                and repeating styles 
+    positions  :                absolute , fixed , relative                 164
+    widths and heights           as %age of parent                          182
+    tag globals  :              tag based , generally                       220
+                                resets browser's defaults 
+    hover state                 hover states across app                     265
+    layout.scss :              layout styles  for flex 
+    spacings.scss :            margins and paddings 
+    text.scss :                line heights , text-transforms , 
+                                word-spacings and letter-spacings , 
+                                font weights and font size 
+    TREND :
+    x-sm => sm => md => lg => x-lg => xx-lg 
+    fonts : smaller => small => normal => large => larger => x-large => xx-large 
+             only two fonts are globals . Others are used component wise 
+ 
+ 
+ */
+
+ @import "./variables.scss";
+ @import "./layout.scss";
+ @import "./text.scss";
+ @import "./spacings.scss";
+ @import "./mediaQuery.scss";
+
+ 
+ 
+ *,
+ ::after,
+ ::before {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0px;
+ }
+ html , body {
+     scroll-behavior: smooth;
+ }
+ 
+ 
+ .font-A, .font-A *{
+      font-family: $font-primary;
+      font-weight: lighter !important;
+  } 
+ 
+ .font-B,.font-B * {
+     font-family: $font-secondary;
+ }
+ 
+ 
+ 
+ //  borders 
+ 
+  
+ .border-bottom {
+     border-bottom: 1px solid $border-color-light;
+ }
+ 
+ .border-left {
+     border-left: 1px solid $border-color-light;
+ }
+ 
+ .border-right {
+     border-right: 1px solid $border-color-light;
+ }
+ 
+ .border-top {
+     border-top: 1px solid $border-color-light;
+ }
+ 
+ .border {
+     border: 1px solid $border-color-light;
+ }
+ 
+ .border-none {
+     border-color: transparent !important;
+ }
+ 
+ .border-bold {
+     border-width: 3px !important;
+ }
+ 
+ .border-dark {
+     border-color: $border-color-dark !important;
+ }
+ 
+ // border-radius 
+ 
+ .rounded-sm {
+     border-radius: 5px;
+ }
+ 
+ .rounded-md {
+     border-radius: 8px;
+ }
+ 
+ .rounded-lg {
+     border-radius: 12px;
+ }
+ 
+ .rounded-x-lg {
+     border-radius: 15px;
+ }
+ 
+ .rounded-0 {
+     border-radius: 0 !important;
+ }
+ 
+ .circle {
+     border-radius: 50%;
+ }
+ .pill {
+     border-radius: 50px;
+ }
+ 
+ 
+ 
+ // utils 
+ 
+ .box-x-sm {
+     min-height: 27px;
+     min-width: 27px;
+     max-height: 27px;
+     max-width: 27px;
+ }
+ 
+ .box-sm {
+     min-height: 32px;
+     min-width: 32px;
+     max-height: 32px;
+     max-width: 32px;
+ }
+ 
+ .box {
+     min-height: 40px;
+     min-width: 40px;
+     max-height: 40px;
+     max-width: 40px;
+ }
+ 
+ .box-lg {
+     min-height: 47px;
+     min-width: 47px;
+     max-height: 47px;
+     max-width: 47px;
+ }
+ 
+ .box-x-lg {
+     min-height: 55px;
+     min-width: 55px;
+     max-height: 55px;
+     max-width: 55px;
+ }
+ 
+ 
+ 
+ .divider {
+     height: 5px;
+     width: 5px;
+     border-radius: 50%;
+     background-color: $color-gray;
+ }
+ 
+ 
+ 
+ 
+ //  positions 
+ .relative {
+     position: relative;
+ }
+ 
+ .absolute {
+     position: absolute;
+ }
+ 
+ .cover-screen {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+ }
+ 
+ 
+ 
+ // widths and heights
+ .w-100pc{
+     width: 100% ;
+ }
+ .h-100pc{
+     height: 100% ;
+ }
+ .w-75pc{
+     width: 75% ;
+ }
+ .h-75pc{
+     height:75% ;
+ }
+ .w-50pc{
+     width: 50% ;
+ }
+ .h-50pc{
+     height: 50% ;
+ } 
+ .w-25pc{
+     width: 25% ;
+ }
+ .h-25pc{
+     height: 25% ;
+ } 
+ 
+ .w-400{
+     width: min( 100% , 400px );
+ }
+ .w-600{
+     width: min( 100% , 600px );
+ }
+ .w-800{
+     width: min( 100% , 800px );
+ }
+ .w-1000{
+     width: min( 100% , 1000px );
+ }
+ .w-1200{
+     width: min( 100% , 1200px );
+ }
+ 
+ 
+ 
+ // tag globals 
+ 
+ img {
+     width: 100%;
+     height: 100%;
+     -o-object-fit: contain;
+     object-fit: contain;
+ }
+ 
+ 
+ .img-cover {
+     -o-object-fit: cover !important;
+     object-fit: cover !important;
+ }
+ 
+ 
+ 
+ button {
+     border: 1px solid transparent;
+     outline: none;
+     cursor: pointer;
+     background-color: transparent;
+ }
+ 
+ input,
+ textarea {
+     padding: 9px 9px 9px 11px;
+     border: 1px solid $border-color-light;
+     outline: none;
+     font-size: 17px;
+     background-color: transparent;
+     word-spacing: 4px;
+ }
+ 
+ textarea {
+     resize: none;
+ }
+ 
+ a {
+     color: inherit ;
+     text-decoration: none;
+ 
+     &:hover {
+         cursor: pointer;
+         text-decoration:underline ;
+         text-decoration-color: inherit;
+         text-underline-offset: 7px;
+     }
+ }
+ 
+ 
+ // hover states 
+ 
+ 
+ // colors 
+ 
+ .bg-dark {
+     background-color: $color-dark;
+ }
+ .bg-light {
+     background-color: $color-light;
+ }
+ .bg-gray {
+     background-color: $color-gray;
+ }
+ .bg-white {
+     background-color: $color-white;
+ }
+ 
+ .bg-cocoa {
+     background-color: $color-cocoa;
+ }
+ .bg-aqua {
+     background-color: $color-aqua;
+ }
+ .bg-skin {
+     background-color: $color-skin;
+ }
+ .bg-cream {
+     background-color: $color-cream;
+ }
+ 
+ .color-dark {
+     color: $color-dark;
+ }
+ .color-light {
+     color: $color-light;
+ }
+ .color-gray {
+     color: $color-gray;
+ }
+ .color-white {
+     color: $color-white;
+ }
+ .color-cocoa {
+     color: $color-cocoa;
+ }
+ .color-aqua {
+     color: $color-aqua;
+ }
+ .color-skin {
+     color: $color-skin;
+ }
+ .color-cream {
+     color: $color-cream;
+ }
+ 
+ 
+ 
+ //  dev 
+ .d{
+     border: 1px solid red ;
+ }
+ 
+
+@import "../utils/button.scss";
+@import "../utils/hover.scss";

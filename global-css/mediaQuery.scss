@@ -1,0 +1,42 @@
+
+.visible-md,.hidden-lg{
+    display: none;
+}
+@media ( max-width:$screen-md){
+    .visible-md {
+        display: unset !important;
+    }
+    .hidden-md {
+        display: none ;
+    }
+    .master-padding {
+        padding: 0 min(5vw, 15px);
+    }
+    .md-img-cover {
+        width: 100% !important;
+        height: 100% !important;
+        margin:0  !important;
+        align-self: center;
+    
+    }
+
+}
+@media ( max-width:$screen-lg){
+    .visible-lg {
+        display: unset !important;
+    }
+    .hidden-lg {
+        display: none ;
+    }
+    .lg-img-cover {
+        width: 100% !important;
+        height: 100% !important;
+        margin:0  !important;
+        align-self: center;
+    
+    }
+    .md-bg-hidden{
+        background-image: none !important;
+    }
+
+}
