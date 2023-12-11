@@ -2,7 +2,7 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*  default margin: 8px */
@@ -29,22 +29,24 @@ p,
 blockquote,
 th,
 td {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
+
 html,
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 [hidden] {
-  display: none;
+	display: none;
 }
 
 pre {
-  white-space: pre-wrap;
+	white-space: pre-wrap;
 }
+
 img,
 svg,
 video,
@@ -53,19 +55,31 @@ audio,
 iframe,
 embed,
 object {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	/* make the alt text italic  */
+	font-style: italic;
+	/*    simulate a fake lazy loading for images */
+	background-size: cover;
+	background-repeat: no-repeat;
+	vartical-align: middle;
+	/*    in case you decide to float the image.Enable when you float the image */
+	shape-margin: 1rem;
+
+
 }
+
 audio:not([controls]) {
-  display: none;
+	display: none;
 }
 
 img,
 svg,
 video,
 canvas {
-  height: 100%;
-  width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 article,
@@ -79,22 +93,23 @@ hgroup,
 main,
 nav,
 section {
-  display: block;
+	display: block;
 }
 
 [type='checkbox'],
 [type='radio'] {
-  box-sizing: border-box;
-  padding: 0;
+	box-sizing: border-box;
+	padding: 0;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
+
 fieldset,
 img {
-  border: 0;
+	border: 0;
 }
 
 address,
@@ -104,19 +119,21 @@ code,
 dfn,
 th,
 var {
-  font-style: normal;
-  font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
 }
+
 ol,
 ul {
-  list-style: none;
+	list-style: none;
 }
+
 caption,
 th {
-  text-align: left;
+	text-align: left;
 }
 
 abbr,
 acronym {
-  border: 0;
+	border: 0;
 }
